@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #f0e1b0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0e1b0;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: #043927;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper-btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: #043927;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1 {
+    color: #f0e1b0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields {
+    width: 75%;
+}
+
+.msg {
+    width: 75%;
+}
+
+.input-fields .input,
+.textarea {
+    margin: 10px 0;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid #f0e1b0;
+    padding: 10px;
+    color: #f0e1b0;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 210px;
+    width: 228px;
+    background: rgb(206, 195, 197);
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #f0e1b0;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f0e1b0;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #f0e1b0;
+}
+
+.inline {
+    display: inline;
+}
+
+.btn {
+    background: #b6b08b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    .msg textarea {
+        height: 30px;
+    }
+    .input-fields,
+    .msg {
+        width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hospital Database</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="title">
+            <h1>Insert Hospital</h1>
+        </div>
+
+            <form action="connect.php" method="POST">
+                <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name of Hospital" name="name" required>
+                    <input type="text" class="input" placeholder="Address" name="address" required>
+                    <input type="tel" class="input" placeholder="Phone #" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 555-555-5555</small><br><br>
+                </div>
+                <div class="msg">
+                    <input type="submit" value="Submit" class="btn"></div>
+                </div>
+                </div>
+            </form>
+            <a href="display.php"><button class="wrapper-btn">View Table</button></a>
+        </div>
+    </body>
+</html>
